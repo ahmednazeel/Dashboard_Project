@@ -1,0 +1,295 @@
+:root{
+    --fa-style-family-classic:"font awesome 6 free";
+    --transitionElement:.3s;
+    --blueColor:#0075ff;
+    --blue-Alt-Color:#0075ff;
+    --orangeColor:#f59e0b;
+    --greenColor:#22c55e;
+    --redColor:#f44336;
+    --greyColor:#888;
+}
+/* Start Components */
+.center-flex{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.d-flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.resize-none{
+    resize:none ;
+}
+.btn-shape{
+    padding: 5px 8px;
+    border-radius: 6px;
+    display: block;
+}
+.p-link{
+    display: block;
+    width: fit-content;
+    padding: 5px 10px;
+    color: white;
+    background-color: var(--blueColor);
+}
+.grid-boxes-400{
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px ,1fr));
+}
+.grid-boxes-250{
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px ,1fr));
+}
+@media (max-width:767px) {
+    .grid-boxes-400{
+        grid-template-columns: minmax(100px ,1fr);
+    }
+}
+/* End Components */
+/* ---------------------- */
+/* Start Box */
+
+.d-flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.f-wrap{
+    flex-wrap: wrap;
+}
+.d-grid{
+    display: grid;
+}
+.gap-10{
+    gap: 10px;
+}
+.gap-20{
+    gap: 20px;
+}
+@media (max-width:767px) {
+    .block-mobile{
+        display:block ;
+    }
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+/* End Box */
+/* ---------------------- */
+/* Start Padding + margin + border*/
+/* PADDING */
+
+.p-10{
+    padding: 10px;
+}
+.p-15{
+    padding: 15px;
+}
+.p-20{
+    padding: 20px;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.pl-15{
+    padding-left: 15px;
+}
+.pl-25{
+    padding-left: 25px;
+}
+.pb-10{
+    padding-bottom: 10px;
+}.pb-15{
+    padding-bottom: 15px;
+}.pb-20{
+    padding-bottom:20px ;
+}
+.pl-30{
+    padding-left: 20px;
+}
+
+
+
+/* MARGIN */
+.m-auto{
+    margin: auto;
+}
+.m-0{
+    margin: 0;
+}
+.m-15{
+    margin: 15px;
+}
+.m-20{
+    margin: 20px;
+}
+.mt-0{
+    margin-top: 0;
+}.mt-5{
+    margin-top: 5px;
+}.mt-10{
+    margin-top: 10px;
+}.mt-20{
+    margin-top: 20px;
+}.mt-25{
+    margin-top: 25px;
+}
+.mr-15{
+    margin-right: 15px;
+}.mr-20{
+    margin-right: 20px;
+}
+.ml-auto{
+    margin-left: auto;
+}
+.mb-0{
+    margin-bottom: 0;
+}.mb-5{
+    margin-bottom: 5px;
+}.mb-10{
+    margin-bottom: 10px;
+}.mb-15{
+    margin-bottom: 15px;
+}.mb-20{
+    margin-bottom: 20px;
+}.mb-25{
+    margin-bottom: 25px;
+}
+/* BORDER */
+.b-none{
+    border: none;
+}
+.rad-6{
+    border-radius: 6px;
+}.rad-10{
+    border-radius: 10px;
+}.rad-half{
+    border-radius: 50%;
+}
+input.none_outline:focus,
+textarea.none_outline:focus{
+    outline: none;
+}
+.border-b-ddd{border-bottom: 1px solid #ddd;}
+.bordre-eee{
+    border: 1px solid #eee;
+}
+/* End Padding + margin */
+/* ---------------------- */
+/* Start Color*/
+.bg-white{
+    background-color: white;
+}.bg-eee{
+    background-color: #eee;
+}.bg-blue{
+    background-color: var(--blueColor);
+}.bg-orange{
+    background-color: var(--orangeColor);
+}.bg-green{
+    background-color:var(--greenColor);
+}.bg-red{
+    background-color: var(--redColor);
+}
+.c-white{
+    color: white;
+}.c-black{
+    color: black;
+}.c-grey{
+    color: var(--greyColor);
+}.c-orange{
+    color:var(--orangeColor);
+}.c-green{
+    color: var(--greenColor);
+}.c-red{
+    color: var(--redColor);
+}.c-blue{
+    color: var(--blueColor);
+}
+/* End Color */
+/* ---------------------- */
+/* Start Position || Width || height*/
+
+.w-40{
+    width: 40px;
+}.w-100{
+    width: 100px;
+}
+.w-full{
+    width: 100%;
+}
+.w-fit{
+    width:fit-content;
+}
+/* Height */
+.line-2{
+    line-height: 2;
+}
+.h-40{
+    height: 40px;
+}
+.h-full{
+    height: 100%;
+}
+.h-100vh{
+    height: 100vh;
+}
+/* Positions */
+.p-relative{
+    
+    position: relative;
+}.p-absolute{
+    position:absolute;
+}
+/* End Position */
+/* ---------------------- */
+/* Start Text */
+.text-c{
+    text-align: center;
+}
+.text-l{
+    text-align: left;
+}
+.text-r{
+    text-align: right;
+}
+@media (max-width:767px) {
+    .text-c-mobile{
+        text-align: center;
+    }
+}
+.fs-12{
+    font-size: 12px;
+}.fs-13{
+    font-size: 13px;
+}.fs-14{
+    font-size: 14px;
+}.fs-15{
+    font-size: 15px;
+}.fs-16{
+    font-size: 16px;
+}
+.fs-25{
+    font-size: 25px;
+}
+
+.fw-600{
+    font-weight: 600;
+}.fw-bold{
+    font-weight: bold;
+}
+
+/* End Text */
+/* ---------------------- */
+
